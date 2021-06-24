@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <h2>Javascript Functions</h2>
+        <p>Demonstrates how a function can be passed as a parameter to another function</p>
+        <!-- <form id="getData" onsubmit="return function1(function2);">
+            <textarea type="text" id="name" placeholder="Enter your name" value="name"></textarea>
+            <input type="submit" value="Submit">
+        </form> -->
+        <input type="text" id="name" placeholder="Enter your name">
+        <button onclick = "function1(document.getElementById('name').value, function2)"> 
+            Click Here 
+        </button> 
+    </body>
+    <script>
+        function function1(name,func){
+            alert(func(name))
+        }
+        function function2(name){
+            return "Hi "+name+" !";
+        }
+    </script>
+</html>

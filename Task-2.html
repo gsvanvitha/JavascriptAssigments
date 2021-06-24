@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+    </head>
+<body>
+
+<h2>JavaScript Function</h2>
+
+<p>Example of an arrow function</p>
+
+<input type="text" id="firstName" placeholder="Enter your first name">
+<input type="text" id="lastName" placeholder="Enter your last name">
+<button onclick = "personName(document.getElementById('firstName').value, document.getElementById('lastName').value)"> 
+    Click Here 
+</button> 
+<script>
+var personName =(first,last)=> {
+    console.log(first+" "+last);
+    document.write(first.charAt(0)+last.charAt(0));
+}
+</script>
+
+</body>
+</html>
