@@ -15,10 +15,13 @@
 <button onclick = "personName(document.getElementById('firstName').value, document.getElementById('lastName').value)"> 
     Click Here 
 </button> 
+<br><br>
+<span id="displayName"></span>
 <script>
 var personName =(first,last)=> {
     console.log(first+" "+last);
-    document.write(first.charAt(0)+last.charAt(0));
+    document.getElementById('displayName').innerHTML = "";
+    document.getElementById('displayName').innerHTML += (first.charAt(0)+last.charAt(0));
 }
 </script>
 
